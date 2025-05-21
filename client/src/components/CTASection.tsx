@@ -3,18 +3,18 @@ import { Button } from '@/components/ui/button';
 
 const CTASection: React.FC = () => {
   return (
-    <section className="py-16 px-4 bg-primary/5">
+    <section className="py-16 px-4 bg-[#4E93BC]/5">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="font-heading font-semibold text-2xl md:text-3xl mb-6">
+        <h2 className="font-heading font-semibold text-2xl md:text-3xl mb-6 text-[#0F2D44]">
           Download the playbook now to transform your enterprise
         </h2>
-        <p className="text-accent text-lg mb-8 max-w-2xl mx-auto">
+        <p className="text-[#6b7385] text-lg mb-8 max-w-2xl mx-auto">
           Transform your enterprise with Digital Interaction Intelligence (DII) and stay ahead of the competition!
         </p>
         
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 justify-center">
           <Button
-            className="bg-primary hover:bg-primary/90 text-white font-medium py-6 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 h-auto"
+            className="bg-[#4E93BC] hover:bg-[#4E93BC]/90 text-white font-medium py-6 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 h-auto"
             asChild
           >
             <a href="#" target="_blank" rel="noopener noreferrer">
@@ -23,7 +23,7 @@ const CTASection: React.FC = () => {
           </Button>
           <Button
             variant="outline"
-            className="bg-white hover:bg-gray-50 text-primary font-medium py-6 px-8 rounded-full text-lg shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-primary/20 h-auto"
+            className="bg-white hover:bg-[#F6F2ED]/80 text-[#4E93BC] font-medium py-6 px-8 rounded-full text-lg shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-[#4E93BC]/20 h-auto"
             asChild
           >
             <a href="#" target="_blank" rel="noopener noreferrer">
@@ -33,11 +33,11 @@ const CTASection: React.FC = () => {
         </div>
         
         <div className="mt-10 flex justify-center items-center">
-          <div className="h-px w-16 bg-primary/30"></div>
-          <p className="mx-4 text-sm text-accent">
+          <div className="h-px w-16 bg-[#4E93BC]/30"></div>
+          <p className="mx-4 text-sm text-[#6b7385]">
             Soroco named a Leader and Star Performer in Everest Group's first-ever Digital Interaction Intelligence report
           </p>
-          <div className="h-px w-16 bg-primary/30"></div>
+          <div className="h-px w-16 bg-[#4E93BC]/30"></div>
         </div>
       </div>
     </section>
