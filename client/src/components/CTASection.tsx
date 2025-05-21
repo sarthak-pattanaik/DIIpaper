@@ -4,22 +4,7 @@ import { motion } from 'framer-motion';
 
 const CTASection: React.FC = () => {
   return (
-    <section className="py-16 px-4 bg-[#4E93BC]/5 relative overflow-hidden">
-      {/* Decorative background elements */}
-      <motion.div 
-        className="absolute top-10 left-5 w-64 h-64 rounded-full bg-[#54A2A6]/5 -z-10"
-        initial={{ opacity: 0, scale: 0 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1.5 }}
-        viewport={{ once: true }}
-      />
-      <motion.div 
-        className="absolute bottom-10 right-5 w-48 h-48 rounded-full bg-[#E5CF73]/10 -z-10"
-        initial={{ opacity: 0, scale: 0 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1.5, delay: 0.3 }}
-        viewport={{ once: true }}
-      />
+    <section className="py-16 px-4 bg-white/50 relative overflow-hidden">
 
       <div className="max-w-4xl mx-auto text-center relative">
         <motion.h2 

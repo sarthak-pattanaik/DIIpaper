@@ -44,22 +44,7 @@ const Testimonials: React.FC = () => {
   };
 
   return (
-    <section className="py-12 px-4 bg-[#F6F2ED]/80 relative overflow-hidden">
-      {/* Decorative elements */}
-      <motion.div 
-        className="absolute -bottom-24 -right-24 w-96 h-96 rounded-full bg-[#4E93BC]/5"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
-      />
-      <motion.div 
-        className="absolute top-1/2 left-0 transform -translate-y-1/2 w-16 h-64 bg-[#0F2D44]/5 rounded-r-full"
-        initial={{ opacity: 0, x: -50 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-      />
+    <section className="py-12 px-4 bg-white/70 relative overflow-hidden">
 
       <div className="max-w-5xl mx-auto">
         <motion.div 

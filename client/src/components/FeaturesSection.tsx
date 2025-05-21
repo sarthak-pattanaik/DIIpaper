@@ -79,21 +79,6 @@ const FeaturesSection: React.FC = () => {
 
   return (
     <section className="py-16 px-4 relative overflow-hidden">
-      {/* Background decorations */}
-      <motion.div 
-        className="absolute top-0 right-0 w-64 h-64 rounded-full bg-[#E5CF73]/10 -z-10"
-        initial={{ opacity: 0, x: 100 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
-      />
-      <motion.div 
-        className="absolute bottom-20 left-10 w-32 h-32 rounded-full bg-[#4E93BC]/10 -z-10"
-        initial={{ opacity: 0, scale: 0 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-      />
       
       <div className="max-w-6xl mx-auto">
         <motion.div 

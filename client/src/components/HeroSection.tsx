@@ -6,26 +6,6 @@ const HeroSection: React.FC = () => {
   return (
     <section className="py-10 px-4 md:py-16 overflow-hidden">
       <div className="max-w-4xl mx-auto text-center relative">
-        {/* Background decorative elements */}
-        <motion.div 
-          className="absolute -top-10 -left-10 w-20 h-20 bg-[#4E93BC]/10 rounded-full"
-          initial={{ scale: 0, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 1, delay: 0.2 }}
-        />
-        <motion.div 
-          className="absolute top-40 -right-10 w-32 h-32 bg-[#E5CF73]/20 rounded-full"
-          initial={{ scale: 0, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 1, delay: 0.4 }}
-        />
-        <motion.div 
-          className="absolute -bottom-10 left-10 w-24 h-24 bg-[#54A2A6]/10 rounded-full"
-          initial={{ scale: 0, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 1, delay: 0.6 }}
-        />
-
         {/* Main content with animations */}
         <motion.h1 
           className="font-heading font-bold text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight text-[#0F2D44]"
