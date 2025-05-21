@@ -8,7 +8,7 @@ import Footer from '@/components/Footer';
 
 const Home: React.FC = () => {
   return (
-    <div className="min-h-screen bg-[#F6F2ED] text-secondary font-sans">
+    <div className="min-h-screen bg-[#F6F2ED] text-[#0F2D44] font-sans">
       <Header />
       <main>
         <HeroSection />
