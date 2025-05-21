@@ -7,16 +7,21 @@ echo "Building frontend assets for Netlify..."
 echo "Installing dependencies..."
 npm install
 
-# Run the client preparation script
-echo "Preparing client data..."
-node client-deploy.js
+# Create simplified version for static deployment
+echo "Creating static build..."
 
 # Build the client application
 echo "Building frontend application..."
 cd client
+
+# Create a simple public folder with redirects if it doesn't exist
+mkdir -p public
+echo "/* /index.html 200" > public/_redirects
+
+# Run Vite build
 npx vite build
 
-# Make sure dist directory exists and is empty
+# Make sure dist directory exists and is empty in root
 echo "Preparing distribution directory..."
 mkdir -p ../dist
 rm -rf ../dist/*
@@ -25,9 +30,11 @@ rm -rf ../dist/*
 echo "Copying build files to distribution directory..."
 cp -r dist/* ../dist/
 
-# Include redirects for SPA routing
-echo "Creating _redirects file for SPA routing..."
-echo "/* /index.html 200" > ../dist/_redirects
+# Also copy redirects if it wasn't included
+if [ ! -f "../dist/_redirects" ]; then
+  echo "Adding _redirects file for SPA routing..."
+  echo "/* /index.html 200" > ../dist/_redirects
+fi
 
 echo "Build complete for Netlify deployment!"
 echo "Your static landing page is ready to be deployed."

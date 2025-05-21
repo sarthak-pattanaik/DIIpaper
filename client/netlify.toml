@@ -1,0 +1,10 @@
+# netlify.toml for client directory
+[build]
+  # This is relative to the client directory when run from there
+  publish = "dist"
+  command = "npm run build"
+  
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

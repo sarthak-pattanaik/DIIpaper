@@ -1,5 +1,6 @@
 [build]
-  command = "chmod +x netlify-build.sh && ./netlify-build.sh"
+  base = "client"
+  command = "npm install && npm run build"
   publish = "dist"
 
 [[redirects]]
